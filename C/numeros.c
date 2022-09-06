@@ -1,14 +1,17 @@
 #include <stdio.h>
 
 int main(){
-	int numero = 0;
-	int soma = 0;
+	int numero, soma;
+	soma = 0;
 
-	while(numero >= 0) {
-		scanf("%d", &numero);
-		if(numero >= 0){
-			soma = soma + numero;
-		}
-		printf("Soma: %d\n", soma);
+	// Inicialização
+	scanf("%d", &numero);
+
+	while(numero > 0) {  			// Condição de parada
+		soma = soma + numero;
+		scanf("%d", &numero);		// Atualização
 	}
+	printf("Soma igual a: %d\n", soma);
+
+	return 0;
 }

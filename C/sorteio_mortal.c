@@ -18,4 +18,6 @@ int main(){
 		case 9: printf("GROOT"); break;
 		default: printf("Nenhuma vítima selecionada");
 	}
+
+	return 0;
 }
