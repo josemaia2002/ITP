@@ -1,9 +1,15 @@
 #include <stdio.h>
 
 int main(){
-	int i, minimo, maximo, count;
+	int i, minimo, maximo, count, aux;
 
 	scanf("%d %d", &minimo, & maximo);
+
+	if(minimo > maximo){
+		aux = maximo;
+		maximo = minimo;
+		minimo = aux;
+	}
 
 	for (i = minimo; i <= maximo; ++i){
 		count = 0;
