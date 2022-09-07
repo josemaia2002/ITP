@@ -5,14 +5,19 @@ int main(){
 
 	scanf("%d", &tamanho);
 
-	if(tamanho == 0){
-		printf("Você entrou com 0, tente de novo na próxima");
+	if(tamanho <= 0){
+		printf("Você entrou com %d, tente de novo na próxima", tamanho);
 	}
-
+	
 	while(i < tamanho){
 		j = 0;
 		while(j < linha){
-			printf("%d ", n);
+			if(n < 10){
+				printf(" %d ", n);
+			}
+			else{
+				printf("%d ", n);
+			}
 			n++;
 			j++;
 		}
@@ -23,4 +28,3 @@ int main(){
 
 	return 0;
 }
-
