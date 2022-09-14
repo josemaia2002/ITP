@@ -20,7 +20,7 @@ int validar(int l1, int l2, int l3){
   }
 }
 
-int triangulo_angulo(int l1, int l2, int l3){
+void triangulo_angulo(int l1, int l2, int l3){
   if(l1*l1 == l2*l2 + l3*l3){
     printf("Triângulo Retângulo\n");
   }
@@ -32,7 +32,7 @@ int triangulo_angulo(int l1, int l2, int l3){
   }
 }
 
-int triangulo_lado(int l1, int l2, int l3){
+void triangulo_lado(int l1, int l2, int l3){
   if(l1 == l2 && l1 == l3){
     printf("Triângulo Equilátero\n");
   }
