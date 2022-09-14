@@ -47,7 +47,7 @@ int main(){
 		}
 	}
 	if(quantidade_amigos == 0){	
-		printf("Os intervalos nao possuem amigos!\n");
+		printf("Os intervalos nao apresentam amigos!\n");
 
 	}
 
