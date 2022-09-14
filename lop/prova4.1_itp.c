@@ -2,28 +2,22 @@
 
 // Verifica se um retângulo está contido em outro.
 void frame(float a_x1, float a_y1, float a_x2, float a_y2, float b_x1, float b_y1, float b_x2, float b_y2){
-	if((b_x1 > a_x1 && b_x1 < a_x2)){				//I
-		if((b_y1 > a_y1 && b_y1 < a_y2)){			//II
-			if((b_x2 > a_x1 && b_x2 < a_x2)){		//III
-				if((b_y2 > a_y1 && b_y2 < a_y2)){	//IV
+	if((b_x1 > a_x1 && b_x1 < a_x2) &&				
+		(b_y1 > a_y1 && b_y1 < a_y2) &&	
+			(b_x2 > a_x1 && b_x2 < a_x2) &&		
+				(b_y2 > a_y1 && b_y2 < a_y2)){	
 					//printf("B esta contido em A\n");					
 					printf("(<%.2f,%.2f>,<%.2f,%.2f>) contem (<%.2f,%.2f>,<%.2f,%.2f>).\n", 
 						a_x1, a_y1, a_x2, a_y2, b_x1, b_y1, b_x2, b_y2);
 						
-				}
-			}
-		}
 	}
-	else if((a_x1 > b_x1 && a_x1 < b_x2)){			//I
-		if((a_y1 > b_y1 && a_y1 < b_y2)){			//II
-			if((a_x2 > b_x1 && a_x2 < b_x2)){		//III
-				if((a_y2 > b_y1 && a_y2 < b_y2)){	//IV
+	else if((a_x1 > b_x1 && a_x1 < b_x2) &&			
+		(a_y1 > b_y1 && a_y1 < b_y2) &&			
+			(a_x2 > b_x1 && a_x2 < b_x2) &&	
+				(a_y2 > b_y1 && a_y2 < b_y2)){	
 					//printf("A esta contido em B\n");
 					printf("(<%.2f,%.2f>,<%.2f,%.2f>) contem (<%.2f,%.2f>,<%.2f,%.2f>).\n", 						
-						b_x1, b_y1, b_x2, b_y2, a_x1, a_y1, a_x2, a_y2);
-				}
-			}
-		}
+						b_x1, b_y1, b_x2, b_y2, a_x1, a_y1, a_x2, a_y2);									
 	}
 	else{
 		printf("Nao posso afirmar!\n");
