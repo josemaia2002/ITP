@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// URI 1004
+
 int main() {
     int A, B, PROD;
     scanf("%d %d", &A, &B);
