@@ -1,4 +1,4 @@
- #include <stdio.h>
+#include <stdio.h>
 
 int testa_divisor(int numero, int divisor){
 	if(numero % divisor == 0){
