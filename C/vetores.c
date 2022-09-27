@@ -54,7 +54,7 @@ int main(){
     printf("\n");
 
     // Imprime os alunos em rec
-    printf("Recuperacao: ");
+    printf("Recuperação: ");
     for (int i = 0; i < control_var_rec; i++){
         if(i == (control_var_rec - 1)){
             printf("%d (%.1lf) ", chamada[rec[i]], media[rec[i]]);
