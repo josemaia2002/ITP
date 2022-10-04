@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Bubble Sort
+
 int main(){
 
     int arr[50], num, x, y, temp;
