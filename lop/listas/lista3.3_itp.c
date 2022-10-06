@@ -24,7 +24,7 @@ int main(){
 
 	}
 	else{
-		printf("Impossível\n");
+		printf("impossivel\n");
 	}
 		
 	return 0;
