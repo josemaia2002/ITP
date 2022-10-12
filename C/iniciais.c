@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<ctype.h>
+#include <stdio.h>
+#include <ctype.h>
 #include <string.h>
 
 void read_line(char linha[], int tam, FILE* f){
