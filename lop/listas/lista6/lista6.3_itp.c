@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 void read_line(char linha[], int tam, FILE* f){
     fgets(linha, tam, f);
@@ -10,7 +11,7 @@ void read_line(char linha[], int tam, FILE* f){
         linha[strlen(linha)-1] = '\0';
     }
 }
-  
+
 void countFreq(char sub[], char txt[], int index[]){
     int M = strlen(sub);
     int N = strlen(txt);
@@ -60,5 +61,6 @@ int main(){
     }
 
     countFreq(sub, txt, posicoes);
+    
     return 0;
 }
