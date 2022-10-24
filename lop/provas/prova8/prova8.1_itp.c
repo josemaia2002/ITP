@@ -96,9 +96,7 @@ int main() {
         }
         else if(comando == 'd'){
             // Removendo struct do vetor de structs
-            //Pessoa novo_grupo[5];   
             deletar(p, grupo, control_var);
-            //control_var--;
         }
         scanf(" %c", &comando); // atualização
     }
