@@ -21,20 +21,52 @@ void countFreq(char sub[], char txt[], int index[], int index_erro[]){
     char resultado[40];
     int parada = 0;
     int size = (int)strlen(sub);
+    int devil_index[40];
+    int the_number_of_the_beast = 0;
+    int hell = 0;
 
-    //printf("%d\n", size);
-   
+
+    char *ponteiro;
+
+    char verifica = txt[i+j];    
+    ponteiro = strchr(sub, verifica);
+
+    if(ponteiro){
+        continue;
+    }
+
+    else{
+        devil_index[the_number_of_the_beast] = i+j;
+        the_number_of_the_beast++;
+  }
+
+
+    for(int i = 0; i < N; i++){
+        for(j = 0; j < M; j++){
+            if(txt[i] == sub[j]){
+                hell++;
+                
+            }
+            if(hell == 0){
+                devil_index[the_number_of_the_beast] = i;
+                the_number_of_the_beast++;
+            }
+  
+        }
+    }
+
+    
+
     for (int i = 0; i <= N - M; i++){
         int j;
         parada = 0;
         for (j = 0; j < M; j++){
-            //printf("%d\n", parada);
-
             if (txt[i+j] != sub[j]){
 
                 if(parada < size){
                     printf("%c não\n", txt[i+j]);
                 }
+            
                 resultado[aux] = txt[i+j];
 
                 index_erro[aux] = j;
@@ -42,6 +74,7 @@ void countFreq(char sub[], char txt[], int index[], int index_erro[]){
                 break;
             }
             else{
+            
                 parada++;
                 if(parada == size){
                     printf("%c sim\n", sub[j]);
@@ -52,13 +85,13 @@ void countFreq(char sub[], char txt[], int index[], int index_erro[]){
                 }
                 else{
                     printf("%c ", sub[j]);
-                    //printf("%d\n", parada);
                 }
-            }  
-          }
-          if(parada == size){
-            break;
-          }
+            }
+                
+
+              if(parada == size){
+                break;
+              }
     }
 
     if(res > 0){

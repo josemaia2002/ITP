@@ -81,10 +81,8 @@ int verifica_char(char P[]){
   }
 }
 
-
-
 int main(){
-	char message[201];
+  char message[201];
   int chave;
 
 	scanf("%d", &chave);
