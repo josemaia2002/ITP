@@ -38,12 +38,10 @@ Pessoa criar(char* name, int age, char gender){
 }
 
 void inserir(Pessoa* grupo, Pessoa p, int indice){
-
     strcpy(grupo[indice].nome, p.nome);               
     grupo[indice].idade = p.idade;
     grupo[indice].sexo = p.sexo;
 }
-
 
 void deletar(Pessoa p, Pessoa* grupo, int size){
     int indice;
