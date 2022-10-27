@@ -8,6 +8,27 @@ void swap(int* xp, int* yp){
 }
 
 void compute_votes(int n, int* votes, int* most_voted, int* second_most_voted){
+    int i, j, min_idx;
+    for(i = 0; i < n - 1; i++) {
+        min_idx = i;
+        for(j = i + 1; j < n; j++){
+            if(votes[j] > votes[min_idx]){
+                min_idx = j;
+            }
+            else if(votes[j] == votes[min_idx]){
+                if(votes[j] > votes[min_idx]){
+                    min_idx = j;
+                }
+                else if(votes[j] == votes[min_idx]){
+                    if(votes[j] > votes[min_idx]){
+                        min_idx = j;
+                    }
+                }
+            }
+        }
+        swap(&votes[min_idx], &votes[i]); 
+    }
+
     int candidatos[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int votos_vet[10] = {0};
 
